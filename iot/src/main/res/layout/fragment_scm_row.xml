@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.iotapp.iot.fragment.ScmFragment">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:gravity="start"
+                    android:id="@+id/invTxtVal"
+                    android:text="@string/tot_inv"
+                    android:textSize="17sp"
+                    android:textColor="@color/black_54"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/BackLogTxtVal"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="17sp"
+                    android:textColor="@color/black_54"
+                    android:layout_height="wrap_content"/>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:id="@+id/poTxtVal"
+                    android:layout_alignParentRight="true"
+                    android:textSize="17sp"
+                    android:textColor="@color/black_54"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/editImg"
+                    android:layout_toRightOf="@+id/poTxtVal"
+                    android:src="@mipmap/ic_edit"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

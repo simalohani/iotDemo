@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:id="@+id/customerinfo"
+    
+    android:background="@color/topbar"
+    android:layout_height="wrap_content" >
+     
+   <FrameLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:visibility="gone"
+       android:layout_marginLeft="10dip">
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dip"
+        android:textColor="@color/black"
+        android:text="status"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:clickable="false"
+        android:textSize="19sp" />
+    
+    <TextView
+        android:id="@+id/textResultStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dip"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:clickable="false"
+        android:textSize="12sp" />
+   </FrameLayout>
+</LinearLayout>  
+    <View 
+    android:layout_width="fill_parent"
+    android:id="@+id/view"
+    android:background="@color/topbar"
+    android:layout_height="5dp"/> 
+    <ListView
+        android:id="@+id/listconvertion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="50.0dip"
+        android:cacheColorHint="@color/ic_font_color" />
+   </LinearLayout>  
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="bottom"
+        android:background="@color/ic_font_color" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="top"
+            android:background="@color/ic_grey" />
+        <ImageView 
+            android:id="@+id/plus"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="3.0dip"
+            android:background="@drawable/plus" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="50.0dip"
+            android:layout_marginRight="60.0dip"
+            android:layout_marginTop="3.0dip"
+            android:gravity="left|center"
+            android:inputType="textCapSentences|textMultiLine"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:lines="5"
+            
+            android:paddingLeft="5.0dip"
+            android:paddingTop="5.0dip"
+            android:textSize="18.0dip" />
+
+        <Button
+            android:id="@+id/buttonPublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5.0dip"
+            android:text="Send"
+            android:textColor="@color/grey_text"
+            android:textSize="22.0dip" />
+    </FrameLayout>
+
+</FrameLayout>

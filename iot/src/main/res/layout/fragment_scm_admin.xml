@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.iotapp.iot.fragment.ScmAdminFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/lv_prnt"
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+        <ListView
+                android:id="@+id/scmAdminListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/ic_font_color" />
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:id="@+id/groupLayout"
+                        android:padding="15dp"
+                        android:visibility="gone"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:layout_height="wrap_content">
+
+            <EditText
+                    android:id="@+id/groupName"
+                    android:textColor="@color/black_76"
+                    android:layout_width="wrap_content"
+                    android:hint="@string/enterGroupName"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:id="@+id/strtGameBtn"
+                    android:layout_marginLeft="8dp"
+                    android:background="@color/topbar"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/groupName"
+                    android:text="@string/strtGame"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

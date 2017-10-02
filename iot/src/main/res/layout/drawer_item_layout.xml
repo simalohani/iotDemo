@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingBottom="8dp"
+                  android:paddingTop="18dp">
+
+    <LinearLayout android:layout_width="90dp"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layerType="software"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/iv_NavIcon"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_NavTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_87"
+        android:textSize="15sp"
+        />
+    </LinearLayout>
+ <View
+         android:id="@+id/devider"
+         android:layout_marginTop="3dip"
+         android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:visibility="gone"
+       android:background="@color/devider">
+
+ </View>
+</LinearLayout>

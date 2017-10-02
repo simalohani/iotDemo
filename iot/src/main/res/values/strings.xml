@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">IotApp</string>
+
+    <string name="title_section1"> Chatting </string>
+    <string name="title_section2">Live Tracking</string>
+    <string name="title_section3">Help</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+    <string name="pref_networkip">Set Host IP</string>
+    <string name="pref_networkip_summary">Set Network IP</string>
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Navigation drawer Screen -->
+    <string-array name="navDrawerItems">
+        <item>Chat</item>
+        <item>Tracking</item>
+        <item>Notification</item>
+        <item>Beer Game</item>
+
+    </string-array>
+
+    <string-array name="navDrawerIcons">
+        <!--<item>@drawable/route</item>-->
+    </string-array>
+
+    <!-- Geofence String -->
+    <!-- Error strings -->
+    <string name="not_connected">GoogleApiClient no yet connected. Try again.</string>
+    <string name="geofence_not_available">Geofence service is not available now</string>
+    <string name="geofence_too_many_geofences">Your app has registered too many geofences</string>
+    <string name="geofence_too_many_pending_intents">
+        You have provided too many PendingIntents to the addGeofences() call
+    </string>
+    <string name="unknown_geofence_error">
+        Unknown error: the Geofence service is not available now
+    </string>
+    <string name="geofence_transition_invalid_type">
+        Geofence transition error: invalid transition type %1$d
+    </string>
+
+    <!-- Transition type strings -->
+    <string name="geofence_transition_entered">Entered</string>
+    <string name="geofence_transition_exited">Exited</string>
+    <string name="unknown_geofence_transition">Unknown Transition</string>
+
+    <string name="geofence_transition_notification_text">Click notification to return to app</string>
+    <string name="google_play_services_unavailable">Please go into Settings > Apps > All and enable Google Play Services.</string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <!--Fetch Address-->
+    <string name="no_geocoder_available">No geocoder available</string>
+    <string name="fetch_address">Fetch address</string>
+    <string name="address_found">Address found</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <!--SCM Constant-->
+    <string name="tot_inv">Total inventory</string>
+    <string name="po">Place Order</string>
+    <string name="od_full_fillment">Order Fulfillment</string>
+    <string name="inv">Inventory</string>
+    <string name="backlog">BackLog</string>
+    <string name="op">Order Place</string>
+    <string name="strtGame">Start game</string>
+    <string name="enterGroupName">Enter group name</string>
+
+    <string name="scm_role">Select role</string>
+    <string-array name="scm_role_arrays">
+        <item>Customer</item>
+        <item>Retailer</item>
+        <item>wholesaler</item>
+        <item>Distributor</item>
+        <item>Factory</item>
+    </string-array>
+
+</resources>

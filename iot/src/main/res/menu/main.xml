@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                        xmlns:tools="http://schemas.android.com/tools"
+      >
+
+    <item
+            android:id="@+id/mqtt"
+            app:showAsAction="ifRoom"
+            android:title="mqtt"
+            android:orderInCategory="1"
+            android:icon="@mipmap/ic_sync_problem_white_24dp">
+
+    </item>
+
+</menu>

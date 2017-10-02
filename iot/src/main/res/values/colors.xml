@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <color name="grey_text">#ff808080</color>
+    <color name="grey_text_89">#59808080</color>
+    <color name="grey">#80bdbdbd</color>
+    <color name="darknewgray">#ff333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="ic_menu_opacity">#8C000000</color>
+    <color name="ic_bg_color">#00897b</color>
+    <color name="ic_earning_bg">#26a69a</color>
+    <color name ="ic_bg">#ebebeb</color>
+    <color name="ic_grey">#9e9e9e</color>
+
+    <!--Color material design-->
+    <color name="topbar_green">#00796b</color>
+    <color name="topbar">#034ea2</color>
+    <color name ="shadow">#00796b</color>
+    <color name="systembar">#003f86</color>
+    <color name="systembar_green">#006559</color>
+    <color name="tabsScrollColor">#26a69a</color>
+    <color name="locationbar">#00897b</color>
+    <color name="container">#fafafa</color>
+    <color name="cardviewtextcolor">#2b2839</color>
+    <color name="task_detail_button">#00897b</color>
+    <color name="task_detail_image_prim">#4db6ac</color>
+    <color name="task_detail_img_na">#added9</color>
+    <color name="devider">#ffd7d7d7</color>
+    <color name="devider_green">#ffb2dfdb</color>
+    <color name="cust_circular">#4fc3f7</color>
+    <color name="landing_shadow">#0a3c37</color>
+    <color name="black">#000000</color>
+    <color name="black_12">#1e000000</color>
+    <color name="black_54">#89000000</color>
+    <color name="black_38">#62000000</color>
+    <color name="black_87">#c2000000</color>
+    <color name="black_76">#BF000000</color>
+    <color name="black_city_38">#6255545e</color>
+    <color name="ic_font_color_87">#b3ffffff</color>
+    <color name="ic_font_color_54">#80ffffff</color>
+    <color name="ic_font_color_30">#4dffffff</color>
+    <color name="ic_font_color">#ffffff</color>
+    <color name="red">#ffe57373</color>
+    <color name="ic_green_87">#df26a69a</color>
+    <color name="ic_green_12">#1e26a69a</color>
+    <color name="ic_green_24">#3e26a69a</color>
+    <color name="ic_btn_100">#ff00897b</color>
+    <color name="ic_brown">#cfbea5</color>
+
+    <!-- new theme auction!-->
+    <color name="ic_top_bar_87">#df034ea2</color>
+    <color name="ic_blue_truck">#33a3dc</color>
+    <color name="ic_blue_87">#b333a3dc</color>
+    <color name="ic_red_87">#b3dc3343</color>
+    <color name="ic_green_text_87">#b30db14b</color>
+    <color name="ic_green_text">#0db14b</color>
+    <color name="ic_black_text">#252525</color>
+    <color name="ic_time_left_text">#b3818181</color>
+    <color name="ic_your_lbl_text">#555555</color>
+    <color name="ic_your_text">#e05a65</color>
+    <color name="ic_currBid_text">#0db14b</color>
+    <color name="ic_red">#e05a65</color>
+    <color name="ic_shadow">#2e2f31</color>
+    <color name="ic_red_withdraw">#dc3343</color>
+    <color name="ic_blue">#33a3dc</color>
+    <color name="ic_blue_12">#1e33a3dc</color>
+    <color name="ic_blue_24">#3e33a3dc</color>
+    <color name="ic_highlight">#0db14b</color>
+    <color name="ic_highlight_87">#df0db14b</color>
+
+
+
+
+
+
+
+</resources>

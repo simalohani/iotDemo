@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <com.iotapp.iot.custom.CustomEditTextPreference
+            	android:title="@string/pref_user_name" 
+            	android:summary="@string/pref_user_name_summary" 
+            	android:key="prefUsername"/>
+         <EditTextPreference 
+            	android:title="@string/pref_networkip" 
+            	android:summary="@string/pref_networkip_summary" 
+            	android:key="prefIp"/>
+        
+    </PreferenceCategory>
+    
+    
+
+</PreferenceScreen>

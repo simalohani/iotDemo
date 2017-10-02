@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+
+             android:layout_height="match_parent"
+             tools:context="com.iotapp.iot.fragment.ScmFragment">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="match_parent"
+                  android:background="@color/topbar"
+                  android:orientation="vertical"
+                  android:layout_height="140dp">
+    <ImageView
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:id="@+id/inventoryImg"
+            android:src="@drawable/beer_icon"
+            android:layout_height="60dp"/>
+    <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:padding="15dp"
+                 android:layout_gravity="bottom"
+
+                 android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content"
+                  android:gravity="start"
+                  android:id="@+id/invTxtLbl"
+                  android:text="@string/tot_inv"
+                  android:textSize="17sp"
+                  android:textColor="@color/ic_font_color"
+                  android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/invTxtVal"
+                  android:layout_toRightOf="@+id/invTxtLbl"
+                  android:textSize="19sp"
+                  android:textColor="@color/ic_font_color"
+                  android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+    </LinearLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/orderFullFillmentLbl"
+                      android:textSize="19sp"
+                      android:text="@string/od_full_fillment"
+                      android:textColor="@color/black_76"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/orderFullFillmentVal"
+                      android:layout_marginRight="9dp"
+                      android:layout_toRightOf="@+id/orderFullFillmentLbl"
+                      android:textSize="19sp"
+                      android:textColor="@color/black_76"
+                      android:layout_height="wrap_content"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/poTxtValInput"
+                    android:layout_toLeftOf="@+id/save"
+                    android:layout_height="wrap_content">
+
+
+
+                <EditText android:layout_width="80dp"
+                          android:id="@+id/poTxtVal"
+                          android:hint="Place order"
+                          android:textSize="19sp"
+                          android:textColor="@color/black_76"
+                          android:layout_height="wrap_content"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button android:layout_width="wrap_content"
+                    android:id="@+id/save"
+                    android:text="Submit"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent"
+              android:background="@color/black_38"
+              android:layout_height="1dp"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:gravity="start"
+                      android:id="@+id/invHeaderLbl"
+                      android:text="@string/inv"
+                      android:textSize="17sp"
+                      android:textColor="@color/black_87"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/BackLogHeaderLbl"
+                      android:layout_centerHorizontal="true"
+                      android:text="@string/backlog"
+                      android:textSize="17sp"
+                      android:textColor="@color/black_87"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:id="@+id/poHeaderLbl"
+                      android:text="@string/op"
+                      android:layout_alignParentRight="true"
+                      android:textSize="17sp"
+                      android:textColor="@color/black_87"
+                      android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <ListView
+                android:id="@+id/scmListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/ic_font_color" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ic_font_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <LinearLayout
+            android:id="@+id/layoutleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal" >
+
+            <!-- <ImageView
+                android:id="@+id/imageuserpingleft"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/username" />
+ -->
+           <!--  <TextView
+                android:id="@+id/txtrepliedleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                
+                android:textColor="@color/black"
+                android:textSize="18.0dip" /> -->
+
+            <TextView
+                android:id="@+id/txtusernameleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="Me"
+                android:textColor="@color/black"
+                android:textSize="20.0dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="horizontal" >
+
+           <!--  <TextView
+                android:id="@+id/txtrepliedright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="2.0dip"
+                
+                android:textColor="@color/black"
+                android:textSize="18.0dip" /> -->
+
+            <TextView
+                android:id="@+id/txtusernameright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="2.0dip"
+                android:text="Me"
+                android:textColor="@color/black"
+                android:textSize="20.0dip"
+                android:textStyle="bold" />
+
+           <!--  <ImageView
+                android:id="@+id/imageuserpingright"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ping_icon" /> -->
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25.0dip"
+            android:layout_gravity="right"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="18.0dip" />
+             
+     
+    </FrameLayout>
+     <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="20dip"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:clickable="false"
+        />
+
+  <!--   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/grey_text"
+            android:textSize="18.0dip" />
+
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:text="Message"
+            android:textColor="@color/black"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+ -->
+</LinearLayout>

@@ -1,0 +1,1 @@
+ALTER TABLE gps ADD COLUMN distance int DEFAULT null;
