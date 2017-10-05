@@ -42,6 +42,7 @@ public class TripHistoryAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
     protected  String tripId;
     protected  double lat;
 
+    // this is constructor->class and method name should be same
     public TripHistoryAdapter(Context ctx, LinkedHashMap trips){
         if(null != trips){
             this.tripList = trips;

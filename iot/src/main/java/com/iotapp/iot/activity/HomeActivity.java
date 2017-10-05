@@ -32,6 +32,7 @@ import com.iotapp.iot.adapter.NavigationDrawerAdapter;
 import com.iotapp.iot.controller.AlarmHandler;
 import com.iotapp.iot.custom.FragmentInteractionListener;
 import com.iotapp.iot.fragment.ChatFragment;
+import com.iotapp.iot.fragment.LiveTripActivity;
 import com.iotapp.iot.fragment.MapFragment;
 import com.iotapp.iot.fragment.ScmFragment;
 import com.iotapp.iot.gps.AppUtils;
@@ -111,11 +112,14 @@ public class HomeActivity extends AppCompatActivity
                 Fragment fragment = null;
                 if(position ==0){
                     //live
-                     fragment= MapFragment.newInstance("live",null);
+                     //fragment= MapFragment.newInstance("live",null);
+                    Intent intent = new Intent(HomeActivity.this, LiveTripActivity.class);
+                    startActivity(intent);
+                    return;
                 }else if(position ==1){
                     //history
                 }else if(position == 2){
-                    //start trip
+                    fragment= MapFragment.newInstance("live",null);
                 }else{
                     gridView.setVisibility(View.GONE);
                     fragment= ChatFragment.newInstance("chat",null);
@@ -359,7 +363,8 @@ public class HomeActivity extends AppCompatActivity
         String[] tripStr = msg.split("/");
         String tripId = tripStr[0];
         String tripMsg = tripStr[1];
-        sharedPrefs.edit().putString(user,tripId).apply();
+        SharedPreferences sharedpreferences = getSharedPreferences("LIVETRIP", Context.MODE_PRIVATE);
+        sharedpreferences.edit().putString(user,tripId).apply();
         Toast.makeText(getApplicationContext(),
                 tripMsg, Toast.LENGTH_SHORT)
                 .show();

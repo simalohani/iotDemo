@@ -62,7 +62,9 @@
             android:authorities="com.iotapp.iot"
             android:exported="false" />
 
-        <activity android:name=".fragment.TripHistoryActivity"></activity>
+        <activity android:name=".fragment.TripHistoryActivity" />
+        <activity android:name=".fragment.LiveTripActivity" />
+        <activity android:name=".controller.LiveTripController"></activity>
     </application>
 
 </manifest>
