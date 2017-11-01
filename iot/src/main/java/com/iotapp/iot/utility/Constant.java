@@ -32,7 +32,7 @@ public class Constant {
      public static final int MAP_FRAGMENT =2;
      public static final int SCM_FRAGMENT =4;
      public static final int SCM_ADMIN_FRAGMENT =5;
-
+     public static final int LIVE_TRIP_FRAGMENT = 6;
      public final static String SCM_FUL_FILLMENT = "order_ful_fillment";
      public final static int ID_SCM = 1;
      public final static int ID_LOC = 2;

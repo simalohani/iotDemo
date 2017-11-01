@@ -170,6 +170,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
 
             switch (getPosition()) {
                 case 1:
+
                     Fragment chat = ChatFragment.newInstance("Chat", "B");
                     fragmentTransaction.replace(R.id.container, chat);
                     fragmentTransaction.commit();

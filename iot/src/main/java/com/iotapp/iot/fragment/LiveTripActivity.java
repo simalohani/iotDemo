@@ -1,5 +1,6 @@
 package com.iotapp.iot.fragment;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.iotapp.iot.R;
+import com.iotapp.iot.activity.HomeActivity;
 import com.iotapp.iot.adapter.LiveTripAdapter;
 import com.iotapp.iot.controller.LiveTripController;
 import com.iotapp.iot.controller.TripController;
@@ -26,10 +28,10 @@ public class LiveTripActivity extends AppCompatActivity {
         rvTrip.addOnItemTouchListener(new RecyclerItemClickListener(rvTrip,new OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-               // ArrayList tripList =  (ArrayList) liveTripAdapter.getItem(position);
-               // Intent intent = new Intent(TripHistoryActivity.this,HomeActivity.class);
-              //  intent.putExtra("data",tripList);
-               // startActivity(intent);
+                /*ArrayList tripList =  (ArrayList)liveTripAdapter.getItem(position);
+                Intent intent = new Intent(LiveTripActivity.this,HomeActivity.class);
+                intent.putExtra("data",tripList);
+                startActivity(intent);*/
             }
         }));
 

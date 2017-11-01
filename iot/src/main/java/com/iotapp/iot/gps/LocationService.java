@@ -178,7 +178,7 @@ public class LocationService extends Service implements
             }
             // we have our desired accuracy of 500 meters so lets quit this service,
             // onDestroy will be called and stop our location uodates
-            if (location.getAccuracy() < 20.0f) {
+            if (location.getAccuracy() < 500.0f) {
                 //Log.e(TAG, "position: " + location.getLatitude() + ", " + location.getLongitude() + " accuracy: " + location.getAccuracy() + " gps speed:" + location.getSpeed() + " alt:" + location.getAltitude());
                 //Logger.getInstance().info(TAG + ": " + "position: " + location.getLatitude() + ", " + location.getLongitude() + " accuracy: " + location.getAccuracy() + " gps speed:" + location.getSpeed());
 

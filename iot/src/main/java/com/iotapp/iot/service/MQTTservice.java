@@ -545,12 +545,12 @@ public class MQTTservice extends Service {
                     return;
                 } else {
 
-                    data.putString("chat", message.toString());
-                    msg = chatHandler.obtainMessage(ChatFragment.CHAT_DATA);
+                   // data.putString("chat", message.toString());
+                   // msg = chatHandler.obtainMessage(ChatFragment.CHAT_DATA);
 
                 }
-                msg.setData(data);
-                chatHandler.sendMessage(msg);
+               // msg.setData(data);
+              //  chatHandler.sendMessage(msg);
             }
         }
     }

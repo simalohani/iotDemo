@@ -208,6 +208,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             }
         });
 
+        if(mParam1.equalsIgnoreCase(String.valueOf(Constant.LIVE_TRIP_FRAGMENT))){
+            history.setVisibility(View.GONE);
+            startTrip.setVisibility(View.GONE);
+            endTrip.setVisibility(View.GONE);
+            distance.setVisibility(View.GONE);
+            distance.setVisibility(View.GONE);
+            chat.setVisibility(View.VISIBLE);
+            
+        }
+
         return rootView;
 
 

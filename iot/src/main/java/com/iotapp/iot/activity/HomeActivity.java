@@ -33,6 +33,7 @@ import com.iotapp.iot.controller.AlarmHandler;
 import com.iotapp.iot.custom.FragmentInteractionListener;
 import com.iotapp.iot.fragment.ChatFragment;
 import com.iotapp.iot.fragment.LiveTripActivity;
+import com.iotapp.iot.fragment.LiveTripFragment;
 import com.iotapp.iot.fragment.MapFragment;
 import com.iotapp.iot.fragment.ScmFragment;
 import com.iotapp.iot.gps.AppUtils;
@@ -113,12 +114,15 @@ public class HomeActivity extends AppCompatActivity
                 if(position ==0){
                     //live
                      //fragment= MapFragment.newInstance("live",null);
-                    Intent intent = new Intent(HomeActivity.this, LiveTripActivity.class);
-                    startActivity(intent);
-                    return;
+                    /*Intent intent = new Intent(HomeActivity.this, LiveTripActivity.class);
+                    startActivity(intent);*/
+                    gridView.setVisibility(View.GONE);
+                    fragment= LiveTripFragment.newInstance("live",null);
                 }else if(position ==1){
+                    gridView.setVisibility(View.GONE);
                     //history
                 }else if(position == 2){
+                    gridView.setVisibility(View.GONE);
                     fragment= MapFragment.newInstance("live",null);
                 }else{
                     gridView.setVisibility(View.GONE);
@@ -164,14 +168,25 @@ public class HomeActivity extends AppCompatActivity
         if(actionBar!= null) {
             actionBar.setTitle(fragmentHandler.getTitle());
         }
+        if(fragmentHandler.getScrNo() == Constant.CHAT_FRAGMENT){
+            gridView.setVisibility(View.GONE);
+        }else if(fragmentHandler.getScrNo() == Constant.MAP_FRAGMENT){
+            gridView.setVisibility(View.GONE);
+        }
         Fragment fragment = null;
         if(fragmentHandler.isNextFragmentMove()) {
             switch (fragmentHandler.getScrNo()) {
                 case Constant.CHAT_FRAGMENT:
+                    gridView.setVisibility(View.GONE);
                     fragment = ChatFragment.newInstance("chat", "chat");
                     break;
                 case Constant.MAP_FRAGMENT:
-                    fragment = MapFragment.newInstance("map", null);
+                    gridView.setVisibility(View.GONE);
+                    if(fragmentHandler.getCurrFragment() instanceof LiveTripFragment) {
+                        fragment = MapFragment.newInstance(String.valueOf(Constant.LIVE_TRIP_FRAGMENT), null);
+                    }else{
+                        fragment = MapFragment.newInstance("map", null);
+                    }
                     break;
 
 
